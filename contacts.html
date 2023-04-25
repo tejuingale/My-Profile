@@ -1,34 +1,92 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title> Contact </title>
-    </head>
-    <body>
-        <h2> Contact Us </h2>
-        <table>
-            <tbody>
-                <tr>
-                   <td> <lable> Full Name: </lable></td>
-                   <td><input type="text" maxlength="4"></td>
-                </tr>
-                <tr>
-                    <td> <label> Mobile No: </label></td>
-                    <td><input type="text"></td>
-                </tr>
-                <tr>
-                    <td><label> Email:</label></td>
-                    <td><input type="email" placeholder="Ex.abc@gmail.com"></td>
-                </tr>
-                <tr>
-                    <td><label> Enquiry:</label></td>
-                    <td><textarea cols="30" rows="10"></textarea></td>
-                </tr>
-                <tr>
-                    <td><button type="submit"> Submit </button></td>
-                    <td><button type="clear"> clear </button></td>
-                </tr>
-            </tbody>
-        </table>
+  <head>
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
 
-    </body>
+    <style>
+ 
+ *{
+    font-family: 'Roboto Slab', serif; 
+ }
+ .links1{
+            margin-left: 50px;
+        }
+
+            input{
+                width: 400px;
+                height: 25px;
+                border-radius: 10px;
+                border: 1px solid burlywood;
+                color: blue;
+                /* text-transform: capitalize; */
+            }
+            input [type="text"]{
+                text-transform: capitalize;
+            }
+            .links{
+            margin-right: 50px;
+        }
+        p{
+          color:red;
+        }
+        input [type="email"] {
+          text-transform: lowercase;
+        }
+        label{
+          font-size: x-large;
+          color: dodgerblue;
+        }
+        #rang1{
+          font-size: x-large;
+          color: dodgerblue;
+        }
+        #submit:hover{
+          background-color: navajowhite;
+        }
+        #clear:hover{
+          background-color: navajowhite;
+        } 
+
+
+</style>
+  </head>
+  <body>
+    <h2 id="style"> Contact Us</h2>
+    <table>
+      <tbody>
+        <tr>
+          <td><lable id="rang1"> Full Name: </lable></td>
+          <td><input type="text" maxlength="40" /></td>
+        </tr>
+        <tr>
+          <td><label> Mobile No: </label></td>
+          <td><input type="number" /></td>
+        </tr>
+        <tr>
+          <td><label> Email:</label></td>
+          <td><input type="email" placeholder="ex.abc@gmail.com" /></td>
+        </tr>
+        <tr>
+          <td><label> Enquiry:</label></td>
+          <td><textarea cols="30" rows="10"></textarea></td>
+        </tr>
+        <tr>
+          <td><button type="submit" id="submit">Submit</button></td>
+          <td><button type="clear" id="clear">clear</button></td>
+        </tr>
+      </tbody>
+    </table>
+    <p> Please follow me 
+      <a class="links1" href="https://www.linkedin.com/" target="blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+     <a class="links1" href="https://www.google.com.co/" target="blank"><i class="fa fa-google" aria-hidden="true"></i></a>
+     <a class="links1" href="https://www.instagram.com/" target="blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+     <a class="links1" href="https://www.facebook.com/" target="blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+   <a class="links1" href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+     
+  </p>
+  </body>
 </html>
